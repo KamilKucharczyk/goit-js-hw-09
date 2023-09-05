@@ -30,7 +30,7 @@ let intervalId = 0;
 
 startBtn.disabled = true;
 
-flatpickr('#datetimePicker', { ...options });
+flatpickr('#datetime-picker', { ...options });
 
 function datetimePicker(selectedDates) {
   if (selectedDates[0].getTime() <= new Date()) {

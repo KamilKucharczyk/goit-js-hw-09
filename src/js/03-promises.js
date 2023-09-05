@@ -10,7 +10,7 @@ import Notiflix from 'notiflix';
 
 const firstDelay = document.querySelector('[name="delay"]');
 const delayStep = document.querySelector('[name="step"]');
-const amountOfPromises = document.querySelector('[name="amount"]');
+const amountPromises = document.querySelector('[name="amount"]');
 const submitBtn = document.querySelector('button[type="submit"]');
 
 function createPromise(position, delay) {
@@ -29,7 +29,7 @@ function createPromise(position, delay) {
   });
 }
 
-submitBtn.addEventListener('click', handleClick);
+submitBtn.addEventListener('submit', handleClick);
 
 function handleClick(event) {
   event.preventDefault();
